@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colleague Pulse</title>
+  <link rel="stylesheet" href="style1z.css"/>
+</head>
+<body>
+  <div class="container">
+    <img src="images/Cp-logo.png" alt="Colleague Pulse Logo" class="logo"/>
+    <p class="tagline">Improving the heartbeat of organisations</p>
+
+    <section>
+      <h2 contenteditable="true">Current Objectives</h2>
+      <div class="checklist">
+        <div><input type="checkbox" checked><span contenteditable="true">Launch private beta for 3 internal teams</span></div>
+        <div><input type="checkbox" checked><span contenteditable="true">Deploy anonymous feedback system</span></div>
+        <div><input type="checkbox"><span contenteditable="true">Build sentiment heatmap module</span></div>
+        <div><input type="checkbox"><span contenteditable="true">Finalise Q3 dashboard rollout plan</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 contenteditable="true">Recent Improvements</h2>
+      <table id="recentTable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Change</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td contenteditable="true">2025-06-20</td><td contenteditable="true">New team dashboard UI</td><td contenteditable="true"><span class="status completed">Completed</span></td></tr>
+          <tr><td contenteditable="true">2025-06-25</td><td contenteditable="true">Anonymous input channel</td><td contenteditable="true"><span class="status completed">Completed</span></td></tr>
+        </tbody>
+      </table>
+      <button class="add-row" data-table="recentTable">Add Row</button>
+    </section>
+
+    <section>
+      <h2 contenteditable="true">Completed Improvements</h2>
+      <div class="scroll-container">
+        <table id="completedTable">
+          <thead>
+            <tr>
+              <th>Project ID</th>
+              <th>Improvement</th>
+              <th>Status</th>
+              <th>Release Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td contenteditable="true">FR074</td>
+              <td contenteditable="true">Set default send method</td>
+              <td><button class="status-toggle">Completed</button></td>
+              <td contenteditable="true">2025.02.v1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button class="add-row" data-table="completedTable">Add Row</button>
+    </section>
+
+    <section class="form-section">
+      <h2>Submit Feedback</h2>
+      <form id="improvementForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <textarea name="suggestion" placeholder="Your Improvement Suggestion" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="customers">
+      <h2>Customers</h2>
+      <ul>
+        <li>Hillcrest Homes</li>
+        <li>Trust Housing</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Colleague Pulse | Internal Product | Version 0.9-beta</p>
+    </footer>
+  </div>
+  <script src="script1z.js"></script>
+</body>
+</html>
